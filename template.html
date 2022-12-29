@@ -9,6 +9,26 @@ make a div tag x
 fix in size height  height 240px by 350px width.
 shape
 color x
+
+trial 3:
+sizing;
+Each of the bars is the same thickness.
+The width of the flag is 500px.
+The height of the flag is 300px.
+
+coloring:
+The top bar is black.
+The middle bar is red.
+The bottom bar is ‘gold’, #ffd700 in hex.
+
+id selector info:
+The id selector uses the id attribute of an HTML element to select a specific element. 
+The id of an element is unique within a page, so the id selector is used to select one unique element! 
+To select an element with a specific id, write a hash (#) character, followed by the id of the element.
+
+class selector info:
+The CSS class selector matches elements based on the contents of their class attribute.
+
 -->
 <html>
 
@@ -17,15 +37,48 @@ color x
       h1 {
         font-family: sans-serif;
       }
+
       div {
-        width: 350px;
-        height: 240px;
+        width: 500px;
+        height: 100px;
         margin: 0px, 0px, 0px, 0px;
-        background-color: red;
+        background-color: gold;
       }
+
       body{
         margin: 0px;
       }
+      
+      <style>
+      .container {
+        width: 500px;
+        height: 300px;
+        position: relative;
+        margin: 30px;
+        background: gold;
+      }
+      
+      .box {
+        width: 500px;
+        height: 100px;
+        position: relative;
+        top: 0;
+        left: 0;
+        background: black;
+      }
+
+      .overlay {
+        margin: 0px;
+        background: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+      <div class="box overlay"></div>
+
+
     
     </style>
   </head>
